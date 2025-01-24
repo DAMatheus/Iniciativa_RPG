@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Iniciativas</title>
+</head>
+<body>
+    <div class="header-container">
+        <img src="assets/favicon.png" alt="Logo" class="header-image">
+        <h1>Iniciativas</h1>
+    </div>
+    <form action="submit" id="form">
+        <label for="name">Nome:</label>
+        <input type="text" class="name" id="name" required>
+        <label for="iniciativa">Iniciativa</label>
+        <input type="number" min="1" id="iniciativa" class="iniciativa" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <button id="startCombat" style="display: none;">Iniciar combate</button>
+    <button id="nextTurn" style="display: none;">Encer. Turno</button>
+    <div id="currentTurn"></div>
+    <div id="output"></div>
+    <div id="turnCount"></div>
+</body>
+</html>
